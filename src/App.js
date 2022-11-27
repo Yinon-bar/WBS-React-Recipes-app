@@ -17,6 +17,13 @@ const recipesArray = [
     cookTime: 45,
     instructions:
       "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit voluptatem quis aliquid perferendis soluta amet asperiores sed facilis eum quia!",
+    ingredients: [
+      {
+        id: 1,
+        name: "Chicken",
+        amount: 1,
+      },
+    ],
   },
   {
     id: 2,
@@ -25,6 +32,18 @@ const recipesArray = [
     cookTime: 180,
     instructions:
       "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit voluptatem quis aliquid perferendis soluta amet asperiores sed facilis eum quia! Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio temporibus et obcaecati saepe dolores, dicta earum consectetur assumenda ab ut labore commodi sint alias dolore molestiae a explicabo expedita ipsa.",
+    ingredients: [
+      {
+        id: 1,
+        name: "Chili",
+        amount: "2 Tbs",
+      },
+      {
+        id: 2,
+        name: "Salt",
+        amount: "2 Tbs",
+      },
+    ],
   },
   {
     id: 3,
@@ -33,6 +52,13 @@ const recipesArray = [
     cookTime: 60,
     instructions:
       "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit voluptatem quis aliquid perferendis soluta ",
+    ingredients: [
+      {
+        id: 1,
+        name: "Chicken",
+        amount: 1,
+      },
+    ],
   },
   {
     id: 4,
@@ -41,6 +67,13 @@ const recipesArray = [
     cookTime: 30,
     instructions:
       "ipsum dolor sit amet consectetur adipisicing elit. Suscipit voluptatem quis aliquid perferendis soluta amet asperio",
+    ingredients: [
+      {
+        id: 1,
+        name: "Chicken",
+        amount: 1,
+      },
+    ],
   },
 ];
 

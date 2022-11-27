@@ -5,7 +5,7 @@ function Ingredients({ ingredients }) {
   return (
     <div>
       {ingredients.map((ingItem) => (
-        <IngredientItem key={ingredients.id} ingItem={ingItem} />
+        <IngredientItem key={Math.random()} ingItem={ingItem} />
       ))}
     </div>
   );

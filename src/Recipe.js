@@ -1,3 +1,5 @@
+import Ingredients from "./Ingredients";
+
 export default function Recipe({ recipe }) {
   return (
     <div>
@@ -17,6 +19,10 @@ export default function Recipe({ recipe }) {
       <div>
         <span>Instructions: </span>
         <div>{recipe.instructions}</div>
+      </div>
+      <div>
+        <span>Igredients: </span>
+        <div>{<Ingredients ingredients={recipe.ingredients} />}</div>
       </div>
     </div>
   );
