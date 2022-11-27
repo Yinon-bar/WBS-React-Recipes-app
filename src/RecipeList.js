@@ -8,8 +8,6 @@ export default function RecipeList({ recipes }) {
         <Recipe key={recipe.id} recipe={recipe} />
       ))}
       <button>Add Recipe</button>
-      <button>Add Recipe</button>
-      <button>Add Recipe</button>
     </div>
   );
 }
