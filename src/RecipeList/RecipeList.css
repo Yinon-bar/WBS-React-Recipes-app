@@ -1,0 +1,7 @@
+.RecipeList {
+  width: 60%;
+  flex-direction: column;
+  padding: 1rem;
+  display: flex;
+  border-right: 2px dashed #333;
+}

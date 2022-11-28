@@ -4,7 +4,7 @@ import "./RecipeList.css";
 
 export default function RecipeList({ recipes }) {
   return (
-    <div>
+    <div className="RecipeList">
       {recipes.map((recipe) => (
         <Recipe key={recipe.id} recipe={recipe} />
       ))}

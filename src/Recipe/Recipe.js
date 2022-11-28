@@ -1,8 +1,9 @@
 import Ingredients from "../Ingredients/Ingredients";
+import "./Recipe.css";
 
 export default function Recipe({ recipe }) {
   return (
-    <div>
+    <div className="Recipe">
       <h1>{recipe.name}</h1>
       <div className="btns">
         <button>Edit</button>
