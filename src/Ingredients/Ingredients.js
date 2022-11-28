@@ -1,5 +1,6 @@
 import React from "react";
-import IngredientItem from "./IngredientItem";
+import IngredientItem from "../IngredientItem/IngredientItem";
+import "./Ingredients.css";
 
 function Ingredients({ ingredients }) {
   return (

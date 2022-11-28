@@ -1,5 +1,6 @@
 import React from "react";
-import Recipe from "./Recipe";
+import Recipe from "../Recipe/Recipe";
+import "./RecipeList.css";
 
 export default function RecipeList({ recipes }) {
   return (

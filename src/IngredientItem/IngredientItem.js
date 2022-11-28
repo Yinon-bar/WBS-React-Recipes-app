@@ -1,3 +1,5 @@
+import "./IngredientItem.css";
+
 function IngredientItem({ ingItem }) {
   return (
     <div>

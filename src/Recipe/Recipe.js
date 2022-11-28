@@ -1,4 +1,4 @@
-import Ingredients from "./Ingredients";
+import Ingredients from "../Ingredients/Ingredients";
 
 export default function Recipe({ recipe }) {
   return (

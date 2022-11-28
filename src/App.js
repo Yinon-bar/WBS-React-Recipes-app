@@ -1,5 +1,5 @@
 import "./App.css";
-import RecipeList from "./RecipeList";
+import RecipeList from "./RecipeList/RecipeList";
 
 function App() {
   return (
