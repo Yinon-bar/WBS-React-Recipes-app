@@ -1,10 +1,13 @@
+import { useState } from "react";
 import "./App.css";
 import RecipeList from "./RecipeList/RecipeList";
 
 function App() {
+  const [recipes, setRecipes] = useState(recipesArray);
+
   return (
     <div className="App">
-      <RecipeList recipes={recipesArray} />
+      <RecipeList recipes={recipes} />
     </div>
   );
 }
