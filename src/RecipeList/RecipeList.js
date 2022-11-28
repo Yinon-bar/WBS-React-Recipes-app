@@ -4,21 +4,21 @@ import "./RecipeList.css";
 
 export default function RecipeList({
   recipes,
-  handleRecipeAdd,
-  handleRecipeDelete,
+  // handleRecipeAdd,
+  // handleRecipeDelete,
 }) {
   return (
     <div className="RecipeList">
       {recipes.map((recipe) => (
         <Recipe
           key={recipe.id}
-          handleRecipeDelete={handleRecipeDelete}
+          // handleRecipeDelete={handleRecipeDelete}
           recipe={recipe}
         />
       ))}
       <button
         className="btn primary"
-        onClick={handleRecipeAdd}
+        // onClick={handleRecipeAdd}
         style={{ width: "50%" }}
       >
         Add Recipe

@@ -1,7 +1,12 @@
+import { useContext } from "react";
+import FunctionsContext from "../Context/FunctionsContext";
 import Ingredients from "../Ingredients/Ingredients";
 import "./Recipe.css";
 
-export default function Recipe({ recipe, handleRecipeDelete }) {
+export default function Recipe({ recipe }) {
+  const { handleRecipeDelete } = useContext(FunctionsContext);
+  console.log(handleRecipeDelete);
+
   return (
     <div className="Recipe">
       <div className="Card-Header Dotted">

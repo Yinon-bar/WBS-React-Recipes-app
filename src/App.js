@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./App.css";
+import FunctionsContext from "./Context/FunctionsContext";
 import RecipeList from "./RecipeList/RecipeList";
 
 function App() {
@@ -29,13 +30,15 @@ function App() {
   }
 
   return (
-    <div className="App">
-      <RecipeList
-        recipes={recipes}
-        handleRecipeDelete={handleRecipeDelete}
-        handleRecipeAdd={handleRecipeAdd}
-      />
-    </div>
+    <FunctionsContext.Provider value={{ handleRecipeDelete, handleRecipeAdd }}>
+      <div className="App">
+        <RecipeList
+          recipes={recipes}
+          // handleRecipeDelete={handleRecipeDelete}
+          // handleRecipeAdd={handleRecipeAdd}
+        />
+      </div>
+    </FunctionsContext.Provider>
   );
 }
 
