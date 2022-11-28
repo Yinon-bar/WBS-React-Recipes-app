@@ -4,7 +4,7 @@ import "./Recipe.css";
 export default function Recipe({ recipe }) {
   return (
     <div className="Recipe">
-      <div className="Card-Header">
+      <div className="Card-Header Dotted">
         <h1>{recipe.name}</h1>
         <div className="btns">
           <button className="btn warning">Edit</button>

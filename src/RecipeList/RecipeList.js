@@ -8,7 +8,9 @@ export default function RecipeList({ recipes }) {
       {recipes.map((recipe) => (
         <Recipe key={recipe.id} recipe={recipe} />
       ))}
-      <button>Add Recipe</button>
+      <button className="btn primary" style={{ width: "50%" }}>
+        Add Recipe
+      </button>
     </div>
   );
 }
