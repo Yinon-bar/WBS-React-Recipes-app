@@ -5,9 +5,28 @@ import RecipeList from "./RecipeList/RecipeList";
 function App() {
   const [recipes, setRecipes] = useState(recipesArray);
 
+  function handleRecipeAdd() {
+    const newRecipe = {
+      id: Math.random(),
+      name: "New",
+      servings: 3,
+      cookTime: 45,
+      instructions:
+        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor quisquam suscipit quo labore corrupti odit.",
+      ingredients: [
+        {
+          id: 1,
+          name: "Chicken",
+          amount: 1,
+        },
+      ],
+    };
+    setRecipes([...newRecipe, newRecipe]);
+  }
+
   return (
     <div className="App">
-      <RecipeList recipes={recipes} />
+      <RecipeList recipes={recipes} handleRecipeAdd={handleRecipeAdd} />
     </div>
   );
 }
