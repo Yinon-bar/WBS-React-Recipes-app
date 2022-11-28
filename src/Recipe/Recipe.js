@@ -1,14 +1,19 @@
 import Ingredients from "../Ingredients/Ingredients";
 import "./Recipe.css";
 
-export default function Recipe({ recipe }) {
+export default function Recipe({ recipe, handleRecipeDelete }) {
   return (
     <div className="Recipe">
       <div className="Card-Header Dotted">
         <h1>{recipe.name}</h1>
         <div className="btns">
           <button className="btn warning">Edit</button>
-          <button className="btn danger">Delete</button>
+          <button
+            onClick={() => handleRecipeDelete(recipe.id)}
+            className="btn danger"
+          >
+            Delete
+          </button>
         </div>
       </div>
       <div>

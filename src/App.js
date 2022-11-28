@@ -21,12 +21,20 @@ function App() {
         },
       ],
     };
-    setRecipes([...newRecipe, newRecipe]);
+    setRecipes([newRecipe, ...recipes]);
+  }
+
+  function handleRecipeDelete(id) {
+    console.log(id);
   }
 
   return (
     <div className="App">
-      <RecipeList recipes={recipes} handleRecipeAdd={handleRecipeAdd} />
+      <RecipeList
+        recipes={recipes}
+        handleRecipeDelete={handleRecipeDelete}
+        handleRecipeAdd={handleRecipeAdd}
+      />
     </div>
   );
 }
