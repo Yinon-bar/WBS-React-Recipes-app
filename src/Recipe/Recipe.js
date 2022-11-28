@@ -4,10 +4,12 @@ import "./Recipe.css";
 export default function Recipe({ recipe }) {
   return (
     <div className="Recipe">
-      <h1>{recipe.name}</h1>
-      <div className="btns">
-        <button>Edit</button>
-        <button>Delete</button>
+      <div className="Card-Header">
+        <h1>{recipe.name}</h1>
+        <div className="btns">
+          <button className="btn warning">Edit</button>
+          <button className="btn danger">Delete</button>
+        </div>
       </div>
       <div>
         <span>Cook Time: </span>

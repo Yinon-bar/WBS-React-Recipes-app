@@ -9,5 +9,43 @@
 .App {
   display: flex;
   align-items: center;
-  text-align: center;
+  /* text-align: center; */
+}
+
+/* Utils */
+
+/* buttons */
+.btn {
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.2rem 0.7rem;
+  margin: 0.5rem;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.primary {
+  background-color: rgb(120, 194, 173);
+}
+.primary:hover {
+  background-color: rgb(93, 153, 136);
+}
+.secondary {
+  background-color: rgb(243, 150, 154);
+}
+.secondary:hover {
+  background-color: rgb(206, 125, 129);
+}
+.warning {
+  background-color: rgb(255, 206, 103);
+}
+.warning:hover {
+  background-color: rgb(190, 154, 76);
+}
+.danger {
+  background-color: rgb(255, 120, 81);
+}
+.danger:hover {
+  background-color: rgb(206, 95, 64);
 }
