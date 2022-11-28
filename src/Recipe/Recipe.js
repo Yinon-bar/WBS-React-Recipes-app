@@ -12,19 +12,19 @@ export default function Recipe({ recipe }) {
         </div>
       </div>
       <div>
-        <span>Cook Time: </span>
-        <span>{recipe.cookTime} </span>
+        <span className="bold">Cook Time: </span>
+        <span>{recipe.cookTime} min.</span>
       </div>
       <div>
-        <span>Servings: </span>
+        <span className="bold">Servings: </span>
         <span>{recipe.servings}</span>
       </div>
       <div>
-        <span>Instructions: </span>
-        <div>{recipe.instructions}</div>
+        <span className="bold">Instructions: </span>
+        <div className="Instructions">{recipe.instructions}</div>
       </div>
       <div>
-        <span>Igredients: </span>
+        <span className="bold">Igredients: </span>
         <div>{<Ingredients ingredients={recipe.ingredients} />}</div>
       </div>
     </div>

@@ -49,3 +49,10 @@
 .danger:hover {
   background-color: rgb(206, 95, 64);
 }
+
+/* Fonts */
+
+/* bold */
+.bold {
+  font-weight: 700;
+}
