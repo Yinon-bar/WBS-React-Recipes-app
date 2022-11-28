@@ -25,7 +25,7 @@ function App() {
   }
 
   function handleRecipeDelete(id) {
-    console.log(id);
+    setRecipes(recipes.filter((recipe) => recipe.id !== id));
   }
 
   return (
