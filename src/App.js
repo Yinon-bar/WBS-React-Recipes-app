@@ -1,10 +1,14 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "./App.css";
 import FunctionsContext from "./Context/FunctionsContext";
 import RecipeList from "./RecipeList/RecipeList";
 
 function App() {
   const [recipes, setRecipes] = useState(recipesArray);
+
+  useEffect(() => {
+    localStorage.setItem("name", "inon");
+  }, []);
 
   function handleRecipeAdd() {
     const newRecipe = {
