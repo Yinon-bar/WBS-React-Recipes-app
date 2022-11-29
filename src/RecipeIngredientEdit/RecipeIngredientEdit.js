@@ -1,17 +1,17 @@
 import { FaTimes } from "react-icons/fa";
 import "./RecipeIngredientEdit.css";
 
-function RecipeIngredientEdit() {
+function RecipeIngredientEdit({ ing }) {
   return (
     <>
       <div className="Ing">
         <label>
           Name
-          <input type="text" />
+          <input type="text" value={ing.name} />
         </label>
         <label>
           Amount
-          <input type="text" />
+          <input type="text" value={ing.amount} />
         </label>
         <div className="AddBtn"></div>
         <button className="btn danger">

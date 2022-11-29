@@ -2,7 +2,7 @@ import "./RecipeEdit.css";
 import { FaTimes } from "react-icons/fa";
 import RecipeIngredientEdit from "../RecipeIngredientEdit/RecipeIngredientEdit";
 
-function RecipeEdit() {
+function RecipeEdit({ recipe }) {
   return (
     <div className="RecipeEdit">
       <div className="Headings">
@@ -15,22 +15,30 @@ function RecipeEdit() {
         <form>
           <label>
             Name
-            <input type="text" required />
+            <input type="text" value={recipe.name} required />
           </label>
           <label>
             Cooking Time
-            <input type="number" required />
+            <input type="number" value={recipe.cookTime} required />
           </label>
           <label>
             Servings
-            <input type="number" min="1" required />
+            <input type="number" min="1" value={recipe.servings} required />
           </label>
           <label>
             Instructions
-            <textarea cols="30" rows="5" required></textarea>
+            <textarea
+              cols="30"
+              rows="5"
+              value={recipe.instructions}
+              required
+            ></textarea>
           </label>
           <label>Ingredients</label>
-          <RecipeIngredientEdit />
+          {recipe.ingredients.map((ing) => (
+            <RecipeIngredientEdit key={ing.id} ing={ing} />
+          ))}
+
           <div className="Btns">
             <button className="btn primary">Add Ingredient</button>
           </div>
