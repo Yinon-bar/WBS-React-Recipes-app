@@ -28,7 +28,7 @@
 
 .RecipeEdit .Form {
   background-color: #f8f9fa;
-  width: 50%;
+  width: 60%;
   display: flex;
   flex-direction: column;
   padding: 1rem;
@@ -47,8 +47,16 @@
 .RecipeEdit .Form label input {
   font-size: 1.3rem;
   text-indent: 0.5rem;
-  border: none;
+  border: 1px solid #ddd;
   border-radius: 0.5rem;
+}
+
+.RecipeEdit .Form textarea {
+  font-size: 1.3rem;
+  text-indent: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
 }
 
 .RecipeEdit .Form .Btns {
@@ -63,5 +71,16 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 100%;
+}
+
+.RecipeEdit .Form .Ing {
+  width: 100%;
+  display: flex;
+}
+.RecipeEdit .Form .Ing label {
+  flex: 1;
+}
+.RecipeEdit .Form .Ing input {
   width: 100%;
 }

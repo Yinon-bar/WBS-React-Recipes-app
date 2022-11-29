@@ -26,8 +26,20 @@ function RecipeEdit() {
           </label>
           <label>
             Instructions
-            <textarea cols="30" rows="10" required></textarea>
+            <textarea cols="30" rows="5" required></textarea>
           </label>
+          <label>Ingredients</label>
+          <div className="Ing">
+            <label>
+              Name
+              <input type="text" />
+            </label>
+            <label>
+              Amount
+              <input type="text" />
+            </label>
+          </div>
+
           <div className="Btns">
             <button className="btn primary">Update</button>
           </div>
