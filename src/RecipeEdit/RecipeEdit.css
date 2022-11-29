@@ -1,0 +1,5 @@
+.RecipeEdit {
+  display: flex;
+  flex-grow: grow;
+  flex-basis: 50%;
+}

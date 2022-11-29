@@ -1,7 +1,12 @@
 import "./RecipeEdit.css";
+import { FaTimes } from "react-icons/fa";
 
 function RecipeEdit() {
-  return <div>RecipeEdit</div>;
+  return (
+    <div className="RecipeEdit">
+      <FaTimes />
+    </div>
+  );
 }
 
 export default RecipeEdit;

@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import "./App.css";
 import FunctionsContext from "./Context/FunctionsContext";
+import RecipeEdit from "./RecipeEdit/RecipeEdit";
 import RecipeList from "./RecipeList/RecipeList";
 
 function App() {
@@ -44,6 +45,7 @@ function App() {
     <FunctionsContext.Provider value={{ handleRecipeDelete, handleRecipeAdd }}>
       <div className="App">
         <RecipeList recipes={recipes} />
+        <RecipeEdit />
       </div>
     </FunctionsContext.Provider>
   );
