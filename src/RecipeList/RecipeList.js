@@ -7,6 +7,9 @@ export default function RecipeList({ recipes }) {
   const { handleRecipeAdd } = useContext(FunctionsContext);
   return (
     <div className="RecipeList">
+      <div className="Headings">
+        <h1>Welcome to Recipes</h1>
+      </div>
       {recipes.map((recipe) => (
         <Recipe key={recipe.id} recipe={recipe} />
       ))}

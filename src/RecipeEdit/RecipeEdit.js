@@ -1,5 +1,6 @@
 import "./RecipeEdit.css";
 import { FaTimes } from "react-icons/fa";
+import RecipeIngredientEdit from "../RecipeIngredientEdit/RecipeIngredientEdit";
 
 function RecipeEdit() {
   return (
@@ -29,21 +30,7 @@ function RecipeEdit() {
             <textarea cols="30" rows="5" required></textarea>
           </label>
           <label>Ingredients</label>
-          <div className="Ing">
-            <label>
-              Name
-              <input type="text" />
-            </label>
-            <label>
-              Amount
-              <input type="text" />
-            </label>
-            <div className="AddBtn">
-              <button className="btn danger">
-                <FaTimes />
-              </button>
-            </div>
-          </div>
+          <RecipeIngredientEdit />
           <div className="Btns">
             <button className="btn primary">Add Ingredient</button>
           </div>
