@@ -4,14 +4,20 @@ import Ingredients from "../Ingredients/Ingredients";
 import "./Recipe.css";
 
 export default function Recipe({ recipe }) {
-  const { handleRecipeDelete } = useContext(FunctionsContext);
+  const { handleRecipeDelete, handleRecipeSelect } =
+    useContext(FunctionsContext);
 
   return (
     <div className="Recipe">
       <div className="Card-Header Dotted">
         <h1>{recipe.name}</h1>
         <div className="btns">
-          <button className="btn warning">Edit</button>
+          <button
+            onClick={() => handleRecipeSelect(recipe.id)}
+            className="btn warning"
+          >
+            Edit
+          </button>
           <button
             onClick={() => handleRecipeDelete(recipe.id)}
             className="btn danger"

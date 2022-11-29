@@ -6,6 +6,11 @@ import RecipeList from "./RecipeList/RecipeList";
 
 function App() {
   const [recipes, setRecipes] = useState(recipesArray);
+  const [selectedRecipeId, setSelectedRecipeId] = useState();
+
+  const selectedRecipe = recipes.find(
+    (recipe) => recipe.id === selectedRecipeId
+  );
 
   useEffect(() => {
     const recipeData = localStorage.getItem("key");
@@ -37,15 +42,21 @@ function App() {
     setRecipes([newRecipe, ...recipes]);
   }
 
+  function handleRecipeSelect(id) {
+    setSelectedRecipeId(id);
+  }
+
   function handleRecipeDelete(id) {
     setRecipes(recipes.filter((recipe) => recipe.id !== id));
   }
 
   return (
-    <FunctionsContext.Provider value={{ handleRecipeDelete, handleRecipeAdd }}>
+    <FunctionsContext.Provider
+      value={{ handleRecipeDelete, handleRecipeAdd, handleRecipeSelect }}
+    >
       <div className="App">
         <RecipeList recipes={recipes} />
-        <RecipeEdit />
+        {selectedRecipe && <RecipeEdit recipe={selectedRecipe} />}
       </div>
     </FunctionsContext.Provider>
   );
