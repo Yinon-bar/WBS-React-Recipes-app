@@ -32,11 +32,7 @@ function App() {
   return (
     <FunctionsContext.Provider value={{ handleRecipeDelete, handleRecipeAdd }}>
       <div className="App">
-        <RecipeList
-          recipes={recipes}
-          // handleRecipeDelete={handleRecipeDelete}
-          // handleRecipeAdd={handleRecipeAdd}
-        />
+        <RecipeList recipes={recipes} />
       </div>
     </FunctionsContext.Provider>
   );
