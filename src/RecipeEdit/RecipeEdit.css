@@ -1,5 +1,21 @@
 .RecipeEdit {
+  position: sticky;
+  top: 250px;
   display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
   flex-grow: grow;
   flex-basis: 50%;
+  background-color: antiquewhite;
+}
+
+.RecipeEdit button {
+  display: flex;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+}
+
+.RecipeEdit button svg {
+  font-size: 2rem;
 }
