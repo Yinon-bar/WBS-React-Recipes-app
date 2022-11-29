@@ -13,7 +13,12 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
+}
+
+.RecipeEdit .Headings h1 {
+  font-weight: 800;
+  font-size: 3rem;
 }
 
 .RecipeEdit button {

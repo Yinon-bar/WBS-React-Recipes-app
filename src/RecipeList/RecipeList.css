@@ -1,7 +1,7 @@
 .RecipeList {
   flex-basis: 60%;
   flex-direction: column;
-  padding: 1rem;
+  padding: 1rem 3rem;
   display: flex;
   border-right: 2px dashed #333;
 }
@@ -12,9 +12,10 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 
-/* .RecipeList h1 {
-  margin-bottom: 1rem;
-} */
+.RecipeList .Headings h1 {
+  font-size: 3rem;
+  font-weight: 800;
+}
