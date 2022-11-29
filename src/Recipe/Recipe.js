@@ -5,7 +5,6 @@ import "./Recipe.css";
 
 export default function Recipe({ recipe }) {
   const { handleRecipeDelete } = useContext(FunctionsContext);
-  console.log(handleRecipeDelete);
 
   return (
     <div className="Recipe">

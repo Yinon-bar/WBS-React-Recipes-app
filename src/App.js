@@ -7,8 +7,14 @@ function App() {
   const [recipes, setRecipes] = useState(recipesArray);
 
   useEffect(() => {
-    localStorage.setItem("name", "inon");
+    const recipeData = localStorage.getItem("key");
+    const recipeJSON = JSON.parse(recipeData);
+    setRecipes(recipeJSON);
   }, []);
+
+  useEffect(() => {
+    localStorage.setItem("key", JSON.stringify(recipes));
+  }, [recipes]);
 
   function handleRecipeAdd() {
     const newRecipe = {
@@ -26,6 +32,7 @@ function App() {
         },
       ],
     };
+
     setRecipes([newRecipe, ...recipes]);
   }
 
