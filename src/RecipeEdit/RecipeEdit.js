@@ -38,10 +38,14 @@ function RecipeEdit() {
               Amount
               <input type="text" />
             </label>
+            <div className="AddBtn">
+              <button className="btn danger">
+                <FaTimes />
+              </button>
+            </div>
           </div>
-
           <div className="Btns">
-            <button className="btn primary">Update</button>
+            <button className="btn primary">Add Ingredient</button>
           </div>
         </form>
       </div>
